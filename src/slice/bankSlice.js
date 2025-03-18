@@ -66,7 +66,7 @@ const bankSlice = createSlice({
 })
 
 
-export default bankSlice.reducers;
+export default bankSlice.reducer;
 
 export const { withdrawn, deposit } = bankSlice.actions;
 
