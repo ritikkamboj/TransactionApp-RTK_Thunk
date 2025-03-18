@@ -37,7 +37,7 @@ function App() {
   console.log(transactions, balance, isError, isLoading);
   return (
     <div>
-      jai Shree Ram
+      <h2 className="text-red-500"> jai Shree Ram</h2>
       <h1>{balance}</h1>
       <button onClick={() => handleDeposit(100)}>Add 100 rupess</button>
       <button onClick={() => handleWithdraw(50)}>remove 50 rupess</button>
