@@ -13,3 +13,13 @@ export const transactionSave = createAsyncThunk('transactionSave', async (transa
 
 
 })
+
+// below we creating async action to fetch the transaction from the server/backend 
+
+export const fetchTransaction = createAsyncThunk('fetchTransaction', async () => {
+    const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
+    return res.json();
+})
+
+
+
